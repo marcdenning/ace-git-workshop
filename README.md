@@ -42,3 +42,15 @@
 1. Review `git status` and commit the change.
 1. Edit `file.txt` again and check if the changes show up in `git status`.
 1. Delete your new branch.
+
+### Merging and Rebasing
+
+1. Create a new branch.
+1. Create a `file.txt` and commit. Note the commit ID.
+1. Checkout yet another branch, create `file2.txt` and commit.
+1. Review `git log` to see both commits.
+1. Checkout the main branch and review `git log` - the new files' commits are not present.
+1. Merge the second branch and review `git log` - everything is now present!
+1. Use `git reset --hard <commit-id>` to reset to the first file's commit.
+1. Checkout the second branch and run `git rebase main` and review `git log` to see the first file's commit.
+1. Delete both branches, checkout the main branch and run `git reset --hard origin/main` to sync back up with the remote.
