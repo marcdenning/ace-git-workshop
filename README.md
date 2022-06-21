@@ -56,3 +56,22 @@
 1. Use `git reset --hard <commit-id>` to reset to the first file's commit.
 1. Checkout the second branch with `git checkout file2` and then run `git rebase main` and review `git log` to see the first file's commit.
 1. Checkout the main branch, delete both file branches, and run `git reset --hard origin/main` to sync back up with the remote.
+
+### Merge Conflicts
+
+1. Checkout a new branch with `git checkout -b file`.
+1. Create `file.txt` and add a phrase to the first line.
+1. Add and commit `file.txt`.
+1. Checkout another branch with `git checkout -b file-mod`.
+1. Edit `file.txt` and add a second line with another phrase.
+1. Commit the change to `file.txt`.
+1. Checkout the first branch `git checkout file`.
+1. Edit `file.txt` again to add a third phrase on the second line. Note that your second line from branch `file-mod` is not present.
+1. Commit this change to `file.txt`.
+1. Attempt to merge the `file-mod` branch with `git merge file-mod`.
+1. Git should warn you that there are conflicts.
+1. Open `file.txt` and note the lines that Git added to show the conflicts.
+1. Edit the file and resolve the conflicts as you see fit, removing the lines Git added for you.
+1. Add and commit `file.txt`, this completes the merge.
+1. Check `git status` and `git log` to review the results of the changes.
+1. Checkout the main branch and delete the two file branches to clean up.
