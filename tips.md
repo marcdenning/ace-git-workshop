@@ -9,4 +9,3 @@
 Authors:
 
 * mdenning
-* Marc Denning
