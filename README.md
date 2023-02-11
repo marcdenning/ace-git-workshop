@@ -35,15 +35,16 @@
 1. Add `file.txt` to `.gitignore`.
 1. Review `git status`.
 1. Hard reset the repo with `git reset --hard`.
-1. Checkout a new branch with `git checkout -b file` and create `file.txt` again.
-1. Add the file and commit with `git add file.txt && git commit -m "Add new file."`.
-1. Edit `.gitignore` to add `file.txt`, then commit the change.
-1. Edit `file.txt` and see if the changes show up in `git status`.
-1. Use `git rm --cached file.txt` to remove the change from the Git index, but not the file system.
-   1. _Note:_ this will remove the file from other's machines when the commit is pulled or merged into their system.
-1. Review `git status` and commit the change.
-1. Edit `file.txt` again and check if the changes show up in `git status`.
-1. Checkout the main branch with `git checkout main`, then delete your new branch with `git branch -D file`.
+1. Follow these next steps to review "ignoring" a file that is already tracked.
+    1. Checkout a new branch with `git checkout -b file` and create `file.txt` again.
+    1. Add the file and commit with `git add file.txt && git commit -m "Add new file."`.
+    1. Edit `.gitignore` to add `file.txt`, then commit the change.
+    1. Edit `file.txt` and see if the changes show up in `git status`.
+    1. Use `git rm --cached file.txt` to remove the change from the Git index, but not the file system.
+        1. _Note:_ this will remove the file from other's machines when the commit is pulled or merged into their system.
+    1. Review `git status` and commit the change.
+    1. Edit `file.txt` again and check if the changes show up in `git status`.
+    1. Checkout the main branch with `git checkout main`, then delete your new branch with `git branch -D file`.
 
 ### Merging and Rebasing
 
