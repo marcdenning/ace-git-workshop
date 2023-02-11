@@ -9,6 +9,7 @@
 1. Clone the repo using your method of choice. SSH is recommended.
    1. Ensure you have [added your SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
    1. Clone the repo using `git clone git@github.com:marcdenning/ace-git-workshop.git`.
+   1. If you do not want to use SSH, clone using `git clone https://github.com/marcdenning/ace-git-workshop`.
 1. Check the `git status` of the repo.
 1. Edit the [`tips.md`](/tips.md) file and commit your change using `git commit -am "Your message"`.
 1. Review the `git log`.
